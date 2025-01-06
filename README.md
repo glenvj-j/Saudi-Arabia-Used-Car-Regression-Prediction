@@ -1,7 +1,7 @@
 # Saudi Arabia Used Car Regression Prediction
 Oleh : Glen Valencius
 
-Presentation Deck : https://docs.google.com/presentation/d/1b1LtrZdJf9H3O_uXwpsv4zk_prxyAwYF/edit#slide=id.p1
+Presentation Deck : [View the Google Slides Presentation](https://docs.google.com/presentation/d/1b1LtrZdJf9H3O_uXwpsv4zk_prxyAwYF/edit#slide=id.p1)
 
 
 ## Introduction
