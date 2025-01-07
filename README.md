@@ -56,6 +56,14 @@ Berdasarkan permasalah tersebut, Syarah,com perlu memiliki ‘tools’ yang dapa
 
 Model ini dapar digunakan oleh 2 stakeholder yaitu Calon Penjual ketika ingin menjual dan diberikan harga perkiraan dan Team Appraiser sebagai referensi untuk menentukan harga mobil ketika selesai diinspeksi.
 
+Target Metric :
+
+| Metric | Target |
+| --- | --- |
+| MAE | < 10.000 SAR |
+| MAPE | < 20 |
+| R2 | > 0.70 |
+
 
 - **Analytic Approach**
 
@@ -66,13 +74,12 @@ Selanjutnya, kita akan membangun model regresi yang akan membantu perusahaan unt
 - **Metric Evaluation**
 
 detailnya sebagai berikut :
-- RMSE : Baik digunakan karena satuannya mengikuti satuan asli data, hasilnya akan sangat berpengaruh bila ada outlier yang karena merupakan nilai rataan akar kuadrat dari error menyebabkan hasil prediksi akan semakin jauh di data yang outlier
-- MAE : Baik digunakan karena satuannya mengikuti satuan asli data, digunakan jika data terdapat outlier karena tidak akan terpengaruh
-- MAPE : Baik untuk mengetahui persentase error.
+- MAE (Primary metric) : Baik digunakan karena satuannya mengikuti satuan asli data, digunakan jika data terdapat outlier karena tidak akan terpengaruh. Ini akan digunakan sebagai fokus untuk Machine Learning ini karena data terdapat outlier.
+- MAPE (Secondary metric): Baik untuk mengetahui persentase error.
 - R Square : digunakan untuk mengevaluasi performance sebuah model. Semakin mendekati 1 maka model cocok dengan data, tetapi tidak berarti prediksinya akan bagus
+- RMSE : Membebankan hitungan error di data yang outlier, dapat lebih fokus untuk menurunkan error prediksi
 
-Semakin kecil nilai RMSE, MAE dan MAPE model yang dibuat akan semakin akurat dalam memprediksi harga mobil sesuai dengan limitasi fitur yang digunakan.
-
+Semakin kecil nilai MAE dan MAPE model yang dibuat akan semakin akurat dalam memprediksi harga mobil sesuai dengan limitasi fitur yang digunakan.
 
 ## 2. Data Understanding
 - **Dataset**
@@ -142,14 +149,14 @@ Model yang akan digunakan adalah :
 
 ## 5. Evaluation
 - **Model Terbaik**
-Model dengan kinerja terbaik adalah Catbooster Regressor, yang mencapai metrik berikut:
+Model dengan kinerja terbaik adalah Catbooster Regressor dengan parameter terbaik setelah melakukan tuning, yang mencapai metrik berikut:
 
 | **Metric** | **Score** |
 | --- | --- |
-| RMSE | 14793.87 |
-| MAE | 10123.53 |
+| MAE | 9837.29 |
 | MAPE | 0.18 |
 | R-Squared | 0.84 |
+| RMSE | 14460.97 |
 
 
 ## 6. Conclusion
