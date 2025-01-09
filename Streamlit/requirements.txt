@@ -1,6 +1,4 @@
 catboost==1.2.7
-category-encoders==2.6.4
-
 imbalanced-learn
 importlib_resources==6.5.2
-pandas
+
