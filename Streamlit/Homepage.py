@@ -4,11 +4,11 @@ import os
 
 st.set_page_config(
     page_title="Syarah.com Car Price Machine Learning",
-    page_icon="favicon.ico",
+    page_icon="https://github.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/blob/main/Streamlit/favicon.ico",
     layout="wide")
 
 st.sidebar.success("Select a page above")
-st.image("cover.png", use_column_width=True)
+st.image("https://github.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/blob/main/Streamlit/cover.png", use_column_width=True)
 
 st.markdown(
     """
