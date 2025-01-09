@@ -3,7 +3,6 @@ import streamlit as st
 import pickle
 import os
 import requests
-import imblearn
 
 st.set_page_config(
     page_title="Syarah.com Car Price Machine Learning",
