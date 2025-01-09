@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide")
 
 st.sidebar.success("Select a page above")
-st.image("https://github.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/blob/main/Streamlit/cover.png", use_column_width=True)
+st.image("https://raw.githubusercontent.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/refs/heads/main/Streamlit/cover.png", use_column_width=True)
 
 st.markdown(
     """
