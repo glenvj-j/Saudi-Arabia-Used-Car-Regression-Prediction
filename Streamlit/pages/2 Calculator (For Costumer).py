@@ -3,6 +3,8 @@ import streamlit as st
 import pickle
 import os
 import requests
+import imbalanced-learn
+
 
 st.set_page_config(
     page_title="Syarah.com Car Price Machine Learning",
