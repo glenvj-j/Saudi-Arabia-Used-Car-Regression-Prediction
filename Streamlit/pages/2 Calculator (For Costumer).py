@@ -117,8 +117,9 @@ with col1:
     st.write("Fill the Detail")
 
     df_customer = user_input_features()
-
-    model_loaded = pickle.load(open('https://raw.githubusercontent.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/main/Streamlit/Model_Saudi_Arabia_Used_Cars.sav','rb'))
+    link = 'https://raw.githubusercontent.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/main/Streamlit/Model_Saudi_Arabia_Used_Cars.sav'
+    response = requests.get(url)
+    model_loaded = pickle.loads(response.content)
     price = model_loaded.predict(df_customer)
 
 with col2:
