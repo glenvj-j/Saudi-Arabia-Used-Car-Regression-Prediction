@@ -24,7 +24,7 @@ st.title("Predict Used Car Price")
 # df = pd.read_csv('clean_dataset_arab_used_car.csv').loc[:,'Type':]
 
 def user_input_features():
-    df = pd.read_csv('clean_dataset_arab_used_car.csv', index_col=None)
+    df = pd.read_csv(https://raw.githubusercontent.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/refs/heads/main/Streamlit/clean_dataset_arab_used_car.csv, index_col=None)
     # df = pd.read_csv('clean_dataset_arab_used_car.csv').loc[:,'Type':]
     # Make & Type
     list_brand = []
