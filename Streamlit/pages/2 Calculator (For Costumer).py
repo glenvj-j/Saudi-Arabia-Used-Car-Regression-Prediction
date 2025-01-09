@@ -118,7 +118,7 @@ with col1:
 
     df_customer = user_input_features()
 
-    model_loaded = pickle.load(open('https://github.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/raw/refs/heads/main/Streamlit/Model_Saudi_Arabia_Used_Cars.sav','rb'))
+    model_loaded = pickle.load(open('Streamlit/Model_Saudi_Arabia_Used_Cars.sav','rb'))
     price = model_loaded.predict(df_customer)
 
 with col2:
