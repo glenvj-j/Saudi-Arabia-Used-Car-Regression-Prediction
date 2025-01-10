@@ -7,7 +7,7 @@ import requests
 
 st.set_page_config(
     page_title="Syarah.com Car Price Machine Learning",
-    page_icon="favicon.ico",
+    page_icon="https://raw.githubusercontent.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/refs/heads/main/Streamlit/favicon.ico",
     layout="wide")
 
 
