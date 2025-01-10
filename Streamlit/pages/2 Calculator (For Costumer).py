@@ -1,7 +1,9 @@
 import pandas as pd
 import streamlit as st
 import pickle
-import os
+import requests
+
+# import os
 
 st.set_page_config(
     page_title="Syarah.com Car Price Machine Learning",
@@ -16,7 +18,7 @@ st.set_page_config(
 # ==============
 
 # Judul
-st.title("Predict Used Car Price")
+st.title("🚙 Predict Used Car Price")
 
 # ========
 
@@ -24,7 +26,8 @@ st.title("Predict Used Car Price")
 # df = pd.read_csv('clean_dataset_arab_used_car.csv').loc[:,'Type':]
 
 def user_input_features():
-    df = pd.read_csv('clean_dataset_arab_used_car.csv', index_col=None)
+    url = 'https://raw.githubusercontent.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/refs/heads/main/Streamlit/clean_dataset_arab_used_car.csv'
+    df = pd.read_csv(url, index_col=None)
     # df = pd.read_csv('clean_dataset_arab_used_car.csv').loc[:,'Type':]
     # Make & Type
     list_brand = []
@@ -118,6 +121,10 @@ with col1:
 
     df_customer = user_input_features()
 
+    url = "https://github.com/glenvj-j/Saudi-Arabia-Used-Car-Regression-Prediction/raw/refs/heads/main/Model_Saudi_Arabia_Used_Cars.sav"
+    response = requests.get(url)
+    model_loaded = pickle.loads(response.content)
+
     model_loaded = pickle.load(open('Model_Saudi_Arabia_Used_Cars.sav','rb'))
     price = model_loaded.predict(df_customer)
 
@@ -141,8 +148,8 @@ with col3:
 
 
 
-# Automatically run Streamlit app from terminal
-if __name__ == '__main__':
-    if not os.environ.get("STREAMLIT_RUN"):
-        os.environ["STREAMLIT_RUN"] = "1"  # Set a flag to indicate Streamlit is running
-        os.system("streamlit run Used_Car.py")
+# # Automatically run Streamlit app from terminal
+# if __name__ == '__main__':
+#     if not os.environ.get("STREAMLIT_RUN"):
+#         os.environ["STREAMLIT_RUN"] = "1"  # Set a flag to indicate Streamlit is running
+#         os.system("streamlit run Used_Car.py")
