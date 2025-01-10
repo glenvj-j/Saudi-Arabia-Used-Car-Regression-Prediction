@@ -2,7 +2,7 @@
 Oleh : Glen Valencius
 
 > [!NOTE]
-> Presentation Deck : [View the Google Slides Presentation](https://docs.google.com/presentation/d/1b1LtrZdJf9H3O_uXwpsv4zk_prxyAwYF/edit#slide=id.p1)
+> Presentation Deck : [View the Google Slides Presentation](https://docs.google.com/presentation/d/1b1LtrZdJf9H3O_uXwpsv4zk_prxyAwYF/edit#slide=id.p1)<br>
 > Streamlit Deploy : [View here](https://saudi-arabia-used-car.streamlit.app/)
 
 ## Introduction
