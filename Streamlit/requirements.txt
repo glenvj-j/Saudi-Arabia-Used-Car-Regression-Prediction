@@ -72,3 +72,6 @@ tzdata==2024.2
 urllib3==2.3.0
 
 requests
+
+from imblearn.over_sampling import SMOTE
+
