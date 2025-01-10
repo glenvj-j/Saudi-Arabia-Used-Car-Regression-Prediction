@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 # import os
+pip install imbalanced-learn
+import imbalanced-learn
 
 st.set_page_config(
     page_title="Syarah.com Car Price Machine Learning",
