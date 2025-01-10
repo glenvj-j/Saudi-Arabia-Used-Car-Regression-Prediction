@@ -73,5 +73,5 @@ urllib3==2.3.0
 
 requests
 
-from imblearn.over_sampling import SMOTE
+imbalanced-learn
 
