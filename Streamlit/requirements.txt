@@ -29,7 +29,7 @@ numpy==2.2.1
 
 packaging==24.2
 
-pandas==2.2.3
+pandas==2.2.2
 
 pillow==11.1.0
 
