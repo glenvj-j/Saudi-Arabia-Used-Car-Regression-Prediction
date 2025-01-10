@@ -74,5 +74,6 @@ urllib3==2.3.0
 requests
 
 imbalanced-learn
-category_encoders
-catboost
+
+catboost==1.2.7
+category-encoders==2.6.4
