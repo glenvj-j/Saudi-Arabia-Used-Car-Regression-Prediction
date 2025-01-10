@@ -1,8 +1,9 @@
 # Saudi Arabia Used Car Regression Prediction
 Oleh : Glen Valencius
 
-Presentation Deck : [View the Google Slides Presentation](https://docs.google.com/presentation/d/1b1LtrZdJf9H3O_uXwpsv4zk_prxyAwYF/edit#slide=id.p1)
-
+> [!NOTE]
+> Presentation Deck : [View the Google Slides Presentation](https://docs.google.com/presentation/d/1b1LtrZdJf9H3O_uXwpsv4zk_prxyAwYF/edit#slide=id.p1)
+> Streamlit Deploy : [View here](https://saudi-arabia-used-car.streamlit.app/)
 
 ## Introduction
 Project ini bertujuan untuk memprediksi harga jual mobil bekas di platform Syarah.com menggunakan machine learning. Di dalam project ini kita akan mencari cara cleaning terbaik, model terbaik, dan parameter terbaik agar menghasilkan prediksi yang terbaik yang didasarkan dari fitur - fitur yang telah disediakan dalam dataset.
