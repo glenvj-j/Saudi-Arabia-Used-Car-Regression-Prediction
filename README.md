@@ -140,12 +140,12 @@ Langkah-langkah :
 
 - **Modelling**
 Model yang akan digunakan adalah :
-- KNeighbors Regressor
-- DecisionTree Regressor
-- Linear Regression
-- XGB Regressor
-- Stacking (Linear, Decision Tree, KNN, dan XGB)
-- Catbooster Regressor
+  - KNeighbors Regressor
+  - DecisionTree Regressor
+  - Linear Regression
+  - XGB Regressor
+  - Stacking (Linear, Decision Tree, KNN, dan XGB)
+  - Catbooster Regressor
 
 
 ## 5. Evaluation

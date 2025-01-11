@@ -19,7 +19,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.info(" To use this tools go to the left and click Calculator")
+st.info("👈 To use this tools go to the left and click Calculator")
 
 col1, col2,col3 = st.columns([2, 2, 2])  # Relative widths: 2:1:3
 
