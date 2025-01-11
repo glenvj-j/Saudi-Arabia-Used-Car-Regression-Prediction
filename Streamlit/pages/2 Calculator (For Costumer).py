@@ -85,10 +85,10 @@ def user_input_features():
 
 
     # ==Gear Type==
-    Gear_Type = st.radio('Fill Gear Type:', df['Gear_Type'].unique().tolist(), horizontal=True)
+    Gear_Type = st.radio('Choose Gear Type:', df['Gear_Type'].unique().tolist(), horizontal=True)
 
     # ==Options==
-    Options = st.radio('Fill Options:', df['Options'].unique().tolist(), horizontal=True)
+    Options = st.radio('Choose Options:', df['Options'].unique().tolist(), horizontal=True)
 
     # ==Engine_Size==
     Engine_Size = st.number_input('Fill Engine Size',min_value=1.0, max_value=9.0,step=0.1,value=5.0)
